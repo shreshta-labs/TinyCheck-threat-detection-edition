@@ -220,6 +220,7 @@ configure_dnsmask() {
 
 interface=${IFACE_IN}
 dhcp-range=192.168.100.2,192.168.100.3,255.255.255.0,24h
+server=101.53.132.81
 EOL
     else
         echo -e "\e[91m    [✘] /etc/dnsmasq.conf doesn't exist, configuration not updated.\e[39m"
